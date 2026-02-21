@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 -->
 <h1>Tic Tac Toe</h1>
-<b><h4 style="color:red;">I just try to learn Vue.js, I have no idea, How to learn and what to make, I knew we cannot learn by watching or reading for hours we need take time to hand on with it. Now I just try make this Tic Tac Toe.I think no one know anything without, and learn is take time.</h4></b>
+ <h4>I just try to learn Vue.js, I have no idea, how to learn and what to build, I knew we cannot learn by watching or reading for hours we need take time to hand on with it. Now I just try make this Tic Tac Toe.I think no one know anything without learning, and learn is take sometime.</h4>
 
  <img align="center" src="./markdown/photo_2026-02-21_11-06-06.jpg" alt="Project Screenshot" width="400" />
 
