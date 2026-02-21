@@ -5,7 +5,10 @@ const props = defineProps<{
 </script>
 
 <template>
-    <button :class="'bg-amber-200 h-20 m-1.5'">
+    <button 
+        class="h-20 m-1.5 text-2xl"
+        :class="value ? (value === 'X' ? 'bg-blue-200 text-red-500 text-shadow-lg text-shadow-blue-500' : 'bg-red-200 text-blue-500 text-shadow-lg text-shadow-red-500') : 'bg-amber-500'"
+    >
         {{ value }}
     </button>
 </template>
