@@ -52,14 +52,19 @@ const calculateWinner = computed((): string | null => {
             class="text-shadow-yellow-500 text-shadow-lg">Tac</span> <span
             class="text-shadow-blue-500 text-shadow-lg">Toe</span></h1>
     <div class="grid grid-cols-3 grid-rows-3 max-w-2xs mx-auto">
-        <EachGrid v-for="(_, index) in 9" :key="index" @click="handleClick(index)" :value="remembers[index]" />
+        <EachGrid 
+            v-for="(_, index) in 9" 
+            :key="index" 
+            :is-game-end="calculateWinner ? true : false"
+            @click="handleClick(index)" 
+            :value="remembers[index]" />
     </div>
-    <div class="mx-3 mt-10">
-        <div class="text-2xl my-3 text-shadow-lg text-shadow-red-500 text-yellow-300">
+    <div class="mt-10 max-w-2xl bg-gray-100 px-3 py-4 rounded-lg mx-auto">
+        <div class="text-2xl my-3 text-shadow-lg text-shadow-gray-300 text-gray-600">
             <div v-if='calculateWinner === "Draw"'>This is a Draw</div>
             <div v-else-if="calculateWinner === null" >The turn of: <span :class="isUserO ? 'text-blue-700' : 'text-red-700'">{{ isUserO ? "O" : "X" }}</span></div>
             <div v-else>Winner is {{ calculateWinner }} </div>
         </div>
-        <button @click="reset" class="shadow shadow-gray-500 px-4 py-1.5 rounded-lg">Reset</button>
+        <button @click="reset" class="shadow shadow-gray-500 hover:shadow-gray-400 px-4 py-1.5 rounded-lg bg-red-300 hover:bg-red-200 cursor-pointer">Reset</button>
     </div>
 </template>
