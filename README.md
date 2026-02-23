@@ -3,7 +3,7 @@
 <h1>Tic Tac Toe</h1>
  <h4>I just try to learn Vue.js, I have no idea how to learn and what to build, I knew we cannot learn by watching or reading for hours we need take time to hand on with it. Now I just try make this Tic Tac Toe. I think no one know anything without learning, and learn is take sometime.</h4>
 
- you can visit: https://soknanprogramming.github.io/try-counter-vue/
+ you can visit: https://soknanprogramming.github.io/tic-tac-toe/
 
  <img align="center" src="./markdown/photo_2026-02-21_11-06-06.jpg" alt="Project Screenshot" width="400" />
 
